@@ -37,6 +37,7 @@ background-color: #339999
     position: fixed;
     top: 20px;
     left: 0;
+    z-index: 100;
 }
 
 .zodiac-menu ul{
@@ -55,13 +56,13 @@ background-color: #339999
 .zodiac-menu ul li:hover:after, .zodiac-menu ul li.zodiac-ativo:after{
     content: '';
     position: absolute;
-    width: 100%;
+    width: 76%;
     height: 3px;
     border-radius: 2px;
     background: #CCFFCC;
     bottom: 0;
-    bottom: -8px;
-    left: 0;
+    bottom: -5px;
+    left: 12%;
 
 }
 
@@ -83,3 +84,90 @@ background-color: #339999
     font-weight: 800;
 }
 
+.zodiac-logo-grande{
+    width: 100%;
+    height: 100vh; 
+    display: block;
+    position: fixed;
+    left: -50%;
+    top: 0;
+    z-index: 2;
+    background-image: url('../img/logo-inicio-grande.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%;
+}
+
+.zodiac-mapa{
+    width: 100%;
+    height: 100vh; 
+    display: block;
+    position: fixed;
+    right: 0%;
+    top: 0;
+    z-index: 1;
+    background-image: url('../img/mapa-incio.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 46%;
+}
+
+.zodiac-container {
+    width: 70%;
+    display: table;
+    margin: 150px auto;
+    position: relative;
+    z-index: 50;
+}
+
+.zodiac-section {
+    border-bottom: 5px solid red;
+}
+
+.zodiac-row {
+    display: table;
+    width: 100%;
+}
+.zodiac-section-inicio{
+    height: 75%;
+}
+.zodiac-section-inicio .zodiac-logotype, .zodiac-txt, .zodiac-tag {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.zodiac-logotype {
+    text-align: right;
+    width:20%;
+   
+
+}
+.zodiac-txt {
+    width: 40%;
+}
+.zodiac-txt p{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;
+    color: white;
+    width: 100%;
+}
+
+.zodiac-tag {
+    width: 20%;
+}
+
+.zodiac-scroll {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('../img/botao-rolagem.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
