@@ -171,3 +171,13 @@ background-color: #339999
     margin: auto;
 
 }
+
+.zodiac-sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #339999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
